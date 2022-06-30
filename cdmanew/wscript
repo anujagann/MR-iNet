@@ -1,1 +1,75 @@
+#
+# ------------------------------------------------------------------------------
+#* Copyright 2020 ANDRO Computational Solutions, LLC.  All Rights Reserved
+# ------------------------------------------------------------------------------
+#
+# ------------------------------------------------------------------------------
+#* Distribution Statement D:
+#*  Distribution authorized to Department of Defense and U.S. DoD contractors only (reason) (June #26, 2020).
+#*  Other requests for this document shall
+#*  be referred to (controlling DoD office)
+#* ------------------------------------------------------------------------------
+#*
+#* ------------------------------------------------------------------------------
+#* Government Rights: GOVERNMENT PURPOSE RIGHTS
+#* Contract Number: W15P7T-20-C-0006
+#* Contractor Name: ANDRO Computational Solutions, LLC.
+#* Contractor Address: The Beeches Professional Campus
+#*                     One Beeches Place 7980 Turin Rd. Bldg. 1
+#*                     Rome, NY 13440
+#* Expiration Date: July 2022
+#* The Government’s rights to use, modify, reproduce, release, perform, display,
+#* or disclose these technical data are restricted by paragraph (b)(2) of the Rights
+#* in Technical Data-Noncommercial Items clause contained in the above
+#* identified contract. No restrictions apply after the expiration date shown
+#* above. Any reproduction of technical data or portions thereof marked with
+#* this legend must also reproduce the markings.
+#* ------------------------------------------------------------------------------
+#*
+#** I-ROAM
+#** Author: Anu Jagannath
+#** Email:  ajagannath@androcs.com
+#** File description: Any new files in the module must be included here for compiling
+#** File: wscript
+#** Date Modified: July 2020
+
+# -*- Mode: python; py-indent-offset: 4; indent-tabs-mode: nil; coding: utf-8; -*-
+
+def build(bld):
+    module = bld.create_ns3_module('cdmanew', ['core','network', 'mobility', 'propagation','point-to-point','wifi', 'internet', 'spectrum', 'applications'])
+    module.source = [
+        'model/cdmanew.cc',
+        'model/cdma-channel.cc',
+        'model/cdma-phy-derived.cc',
+        'model/cdma-phy.cc',
+        'model/cdma-mac.cc',
+        'model/cdma-mac-header.cc',
+        'model/cdma-error-model.cc' ,
+        'model/cdma-net-device.cc',
+        'helper/cdmanew-helper.cc',
+        ]
+
+    module_test = bld.create_ns3_module_test_library('cdmanew')
+    module_test.source = [
+        'test/cdmanew-test-suite.cc',
+        ]
+
+    headers = bld(features='ns3header')
+    headers.module = 'cdmanew'
+    headers.source = [
+        'model/cdmanew.h',
+        'model/cdma-channel.h',
+        'model/cdma-phy.h',
+        'model/cdma-phy-derived.h',
+        'model/cdma-mac.h',
+        'model/cdma-mac-header.h',
+        'model/cdma-error-model.h' ,
+        'model/cdma-net-device.h',
+        'helper/cdmanew-helper.h',
+        ]
+
+    if bld.env.ENABLE_EXAMPLES:
+        bld.recurse('examples')
+
+    # bld.ns3_python_bindings()
 
