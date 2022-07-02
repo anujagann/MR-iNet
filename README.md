@@ -1,4 +1,4 @@
-# Marconi-Rosenblatt Framework for Intelligent Networks (MR-iNetGym) For Rapid Design and Implementation of Distributed Multi-agent Reinforcement Learning Solutions for Wireless Networks
+# Marconi-Rosenblatt Framework for Intelligent Networks (MR-iNet Gym) For Rapid Design and Implementation of Distributed Multi-agent Reinforcement Learning Solutions for Wireless Networks
 ### Software encompassing a CDMA ns-3 module, ns3-gym scenario, and reinforcemnet learning framework
 
 ## CDMA Module
