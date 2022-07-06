@@ -149,6 +149,6 @@ Run example from within ns3-gym directory (need TensorFlow):
 
 ## How to cite this dataset ? Please cite the original paper.
 * **BibTeX** 
-> >  @article{MRiNetcomnet2022, title={{Marconi-Rosenblatt Framework for Intelligent Networks (MR-iNet Gym): For Rapid Design and Implementation of Distributed Multi-agent Reinforcement Learning Solutions for Wireless Networks}}, author={ Farquhar, Collin and Kafle, Swatantra and Hamedani, Kian and Jagannath, Anu and Jagannath, Jithin}, journal = {Computer Networks (Under Review)}, month = {June}, year = {2022} } </br >
+> >  @article{MRiNetcomnet2022, title={{Marconi-Rosenblatt Framework for Intelligent Networks (MR-iNet Gym): For Rapid Design and Implementation of Distributed Multi-agent Reinforcement Learning Solutions for Wireless Networks}}, author={ Farquhar, Collin and Kafle, Swatantra and Hamedani, Kian and Jagannath, Anu}, journal = {Computer Networks (Under Review)}, month = {June}, year = {2022} } </br >
 * **Plain Text** 
 > > C. Farquhar, S. Kafle; K. Hamedani; A. Jagannath. "Marconi-Rosenblatt Framework for Intelligent Networks (MR-iNet Gym): For Rapid Design and Implementation of Distributed Multi-agent Reinforcement Learning Solutions for Wireless Networks", Computer Networks (Under Review).</br >
