@@ -150,5 +150,13 @@ Run example from within ns3-gym directory (need TensorFlow):
 ## How to cite this dataset ? Please cite the original paper.
 * **BibTeX** 
 > >  @article{MRiNetcomnet2022, title={{Marconi-Rosenblatt Framework for Intelligent Networks (MR-iNet Gym): For Rapid Design and Implementation of Distributed Multi-agent Reinforcement Learning Solutions for Wireless Networks}}, author={ Farquhar, Collin and Kafle, Swatantra and Hamedani, Kian and Jagannath, Anu}, journal = {Computer Networks (Under Review)}, month = {June}, year = {2022} } </br >
+> >  @inproceedings{JagannathWiseML22_MRiNet,
+    author ={Jithin Jagannath, Kian Hamedani, Collin Farquhar, Keyvan Ramezanpour, Anu Jagannath},
+    title ={{MR-iNet Gym: Framework for Edge Deployment of Deep Reinforcement Learning on Embedded Software Defined Radio}},
+    booktitle ={Proc. of ACM Workshop on Wireless Security and Machine Learning (WiseML)},
+    address ={San Antonio, Texas, USA},
+    month ={May},
+    year ={2022}}
 * **Plain Text** 
 > > C. Farquhar, S. Kafle; K. Hamedani; A. Jagannath. "Marconi-Rosenblatt Framework for Intelligent Networks (MR-iNet Gym): For Rapid Design and Implementation of Distributed Multi-agent Reinforcement Learning Solutions for Wireless Networks", Computer Networks (Under Review).</br >
+> > J. Jagannath, K. Hamedani, C. Farquhar, K. Ramezanpour, A. Jagannath, "MR-iNet Gym: Framework for Edge Deployment of Deep Reinforcement Learning on Embedded Software Defined Radio", in Proc. of ACM Workshop on Wireless Security and Machine Learning (WiseML), San Antonio, Texas, USA May, 2022.
